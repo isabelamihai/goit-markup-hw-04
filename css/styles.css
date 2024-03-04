@@ -4,6 +4,8 @@
     --color-hover:#404BBF; /* OCEAN */
     --service-color:#4D5AE5; /*IRIS*/
     --nav-buton-color:#F4F4FD; /* CLOUD */
+    --footer-links-color:#31D0AA; /*green*/
+    --customers-logo-color:#8E8F99; /*light slate*/
     --heading-font-family: "Raleway",Verdana,Tahoma, sans-serif;
     --text-font-family: "Roboto",Verdana,Tahoma, sans-serif;
 }
@@ -106,7 +108,7 @@
 .third-section li{
     margin:24px;
     width: 264px;
-    height: 380px;
+    height: 428px;
     text-align: center;
     background-color: #ffffff;
 }
@@ -122,6 +124,9 @@
     margin-left:20px;
 }
 
+.social-end{
+    display: flex;
+}
 .row-container{
     display:flex;
     justify-content: center;
@@ -148,7 +153,7 @@
 }
 
 .row p{
-    margin-bottom:32px;
+    margin-bottom:0px;
     margin-top:8px;
     margin-left:16px;
 }
@@ -159,6 +164,88 @@
 
 .third-section p{
     margin-top:8px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap:24px;
+    margin-top:8px;
+}
+
+.social-links .icon svg{
+    color:var(--nav-buton-color);
+    width: 16px;
+    height: 16px;
+}
+.social-links .icon {
+    width: 40px;
+    height: 40px;
+    background-color:var(--service-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-end{
+    display: flex;
+    justify-content:center;
+    width: 208px;
+    height: 80px;
+    margin-left:540px;
+}
+
+.company-logo{
+    display: flex;
+}
+
+.company-logo svg{
+    color:var(--customers-logo-color);
+    width: 104px;
+    height: 56px;
+}
+.social-links .icon:hover,
+.social-links .icon:focus{
+    background-color:var(--color-hover);
+}
+
+.social-end-links {
+    display: flex;
+    gap: 16px; 
+}
+
+.social-end{
+    display: flex;
+    flex-direction: column;
+}
+.social-end-links .icon svg{
+    color: var(--nav-buton-color);
+    width: 24px;
+    height: 24px;
+}
+.social-end-links .icon {
+    width: 40px;
+    height: 40px;
+    background-color:var(--service-color);
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-end p{
+    color: #ffffff;
+}
+.social-end-links .icon:hover,
+.social-end-links .icon:focus{
+    background-color:var(--footer-links-color);
+}
+
+.social-end{
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 .logo::before,
 .end-section .end-logo::before {
@@ -232,6 +319,7 @@ ul{
     background-size: cover;
     background-attachment: fixed;
  }
+
 
 h1 {
     font-weight: 700; 
