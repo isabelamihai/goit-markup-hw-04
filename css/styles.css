@@ -215,14 +215,6 @@
     align-items: center;
 }
 
-.social-end{
-    display: flex;
-    justify-content:center;
-    width: 208px;
-    height: 80px;
-    margin-left:540px;
-}
-
 .company-logo{
     display: flex;
     justify-content: center;
@@ -269,16 +261,24 @@
     background-color:var(--color-hover);
 }
 
+.social-end {
+    display: flex;
+    flex-direction: column;
+    width: 208px;
+    height: 80px;
+    margin-left: 120px;
+}
+
 .social-end-links {
     display: flex;
     gap: 16px; 
 }
-
-.social-end{
+ .full-container {
     display: flex;
-    flex-direction: column;
-    margin-left:120px;
+    align-items: first baseline;
+    justify-content:flex-start;
 }
+
 .social-end-links .icon svg{
     color: var(--nav-buton-color);
     width: 24px;
@@ -300,11 +300,6 @@
 .social-end-links .icon:hover,
 .social-end-links .icon:focus{
     background-color:var(--footer-links-color);
-}
-
-.end-section .full-container{
-    display: flex;
-    align-items:first baseline;
 }
 
 .logo::before,
