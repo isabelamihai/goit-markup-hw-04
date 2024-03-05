@@ -271,6 +271,8 @@
 
 .social-end-links {
     display: flex;
+    width: 208px;
+    height: 40px;
     gap: 16px; 
 }
  .full-container {
